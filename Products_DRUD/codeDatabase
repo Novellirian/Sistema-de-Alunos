@@ -1,0 +1,14 @@
+-- Criar o banco de dados
+CREATE DATABASE sistema_alunos;
+
+-- Usar o banco de dados criado
+USE sistema_alunos;
+
+-- Criar a tabela 'alunos'
+CREATE TABLE alunos (
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- ID auto-incremental e chave prim�ria
+    nome VARCHAR(255) NOT NULL,         -- Nome do aluno (n�o nulo)
+    idade INT NOT NULL,                 -- Idade do aluno (n�o nulo)
+    curso VARCHAR(255) NOT NULL,        -- Curso do aluno (n�o nulo)
+    matricula VARCHAR(20) NOT NULL UNIQUE -- Matr�cula �nica e n�o nula
+);
